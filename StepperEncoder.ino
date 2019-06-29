@@ -145,5 +145,6 @@ void loop() {
   }
   memcpy(lastpattern, pattern, 4 * sizeof(lastpattern));
   lastseq = seq;
+  // one and zero represent rotation direction
   Serial.print((deltaseq > 0) ? 1 : 0);
 }
